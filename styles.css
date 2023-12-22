@@ -197,3 +197,33 @@ svg circle {
     #bad7fa 100%
   );
 }
+@media screen and (max-width:1250px){
+  .chart-wrapper {
+    > canvas {
+      display: block;
+      height: 150px !important;
+      width: 300px !important;
+    }
+  }
+  
+}
+@media screen and (max-width:992px){
+  .chart-wrapper {
+    text-align: center;
+    > canvas {
+      display: block;
+      height: 250px !important;
+      width: 500px !important;
+    }
+  }
+}
+@media screen and (max-width:540px){
+  .chart-wrapper {
+    text-align: center;
+    > canvas {
+      display: block;
+      height: 150px !important;
+      width: 300px !important;
+    }
+  }
+}

@@ -11,10 +11,10 @@
 <body>
 <header>
     <div class="row glass py-3 mx-0">
-        <div class="col-6 logo">
+        <div class="col-sm-12 col-lg-6 logo text-xs-center text-sm-center text-lg-start">
             <img src="./images/logo.png" alt="Logo">
         </div>
-        <div class="col-6 d-flex align-items-center justify-content-end     ">
+        <div class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-xs-center justify-content-sm-center justify-content-lg-end     ">
             <div class="icon mb-1 pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#69adff" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
               </svg></div>
@@ -27,7 +27,7 @@
 <main>
 <div class="dashboard glass mt-2 p-3">
     <div class="dashboard-header row align-items-center">
-        <div class="col-6 admin-heading fw-bolder fs-5">Admin Dashboard <!-- Button trigger modal -->
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 admin-heading fw-bolder fs-5">Admin Dashboard <!-- Button trigger modal -->
             <button type="button" class="more-btn ps-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#24449d" class="bi bi-list" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -36,7 +36,7 @@
             
             <!-- Modal -->
             <div class="modal fade glass" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -64,7 +64,7 @@
                 </div>
               </div>
             </div></div>
-        <div class="col-6 d-flex align-items-center justify-content-end">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-center justify-content-sm-center justify-content-md-end justify-content-lg-end">
             <div class="timer">
                 <div id="countdown">
                     <div id="countdown-number"></div>
@@ -85,7 +85,7 @@
         </div>
     </div>
     <div class="call-details-container">
-        <div class="d-flex justify-content-between align-items-center mx-0 mt-1 mb-3 gap-3">
+        <div class="d-xs-block d-sm-flex justify-content-between align-items-center mx-0 mt-1 mb-3 gap-3 flex-sm-wrap flex-md-nowrap">
             <div class="call-detail-card  green-bg d-flex justify-content-between align-items-center px-3 py-2">
                 <div class="call-detail">
                     <div class="call-det-icons"><img src="./images/phone-book.png" alt="phone book"> <span class="call-det-text ms-3">Total Calls</span></div>
@@ -121,16 +121,16 @@
         </div>
     </div>
     <div class="content-wrapper row">
-        <div class="stats-container col-4">
+        <div class="stats-container col-sm-12 col-lg-4">
             <div class="admin-heading fw-bolder fs-5 mb-3">Total Call Stats <span class="total-calls float-end"><select name="day" id="call-stat-day"><option value="today">Today</option><option value="yesterday">Yesterdy</option></select></span></div>
             <div id="call-detail-graph">
 
             </div>
         </div>
-        <div class="agents-details-container col-8">
+        <div class="agents-details-container col-sm-12 col-lg-8">
             <div class="row">
-                <div class="col-12 d-flex justify-content-between">
-                    <div class="agents-det-card d-grid p-3 pointer green-bg">
+                <div class="col-12 d-sm-block d-md-flex justify-content-between">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer green-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/agents.png" alt="agent icon">
@@ -141,7 +141,7 @@
                             Agents Logged In
                         </div>
                     </div>
-                    <div class="agents-det-card d-grid p-3 pointer blue-bg">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer blue-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/agents.png" alt="agent icon">
@@ -152,7 +152,7 @@
                             Agents In Calls
                         </div>
                     </div>
-                    <div class="agents-det-card d-grid p-3 pointer pink-bg">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer pink-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/agents.png" alt="agent icon">
@@ -165,8 +165,8 @@
                     </div>
                 </div>
                 
-                <div class="col-12 d-flex justify-content-between mt-3">
-                    <div class="agents-det-card d-grid p-3 pointer lilac-bg">
+                <div class="col-12 d-sm-block d-md-flex justify-content-between mt-3">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer lilac-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/pasued-agent.png" alt="paused agent">
@@ -177,7 +177,7 @@
                             Paused Agents
                         </div>
                     </div>
-                    <div class="agents-det-card d-grid p-3 pointer green-bg">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer green-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/dead-call-agent.png" alt="dead call agent">
@@ -188,7 +188,7 @@
                             Agents In Dead Calls
                         </div>
                     </div>
-                    <div class="agents-det-card d-grid p-3 pointer blue-bg">
+                    <div class="agents-det-card  mt-xs-2 mt-sm-2 mt-md-0 d-grid p-3 pointer blue-bg">
                         <div class="agent-card-top d-flex justify-content-between ">
                             <div class="agent-icon">
                                 <img src="./images/dispo-agent.png" alt="dispo agent">
@@ -204,7 +204,7 @@
         </div>
     </div>
     <div class="all-stats-wrapper mt-3">
-        <div class="all-stats d-flex justify-content-between">
+        <div class="all-stats d-xs-block d-sm-flex justify-content-sm-center justify-content-lg-between flex-sm-wrap flex-lg-nowrap">
             <div class="all-stats-cards">
                 <div class="chart-wrapper">
                     <canvas id="myChart"></canvas>
