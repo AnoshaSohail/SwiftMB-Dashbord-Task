@@ -1,0 +1,199 @@
+:root {
+  --sky-blue: #69adff;
+  --white: #ffffff;
+  --lilac: #c5b0ee;
+  --pink: #f599c0;
+  --blue: #7fb3f2;
+  --green: #2dc5d3;
+  --gray: ##7f8092;
+  --blue-text: #24449d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: visible;
+  height: auto;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #69adff24;
+}
+.phone-num {
+  color: var(--blue-text);
+}
+.logo {
+  > img {
+    max-width: 24%;
+  }
+}
+.modal-backdrop {
+  z-index: -1;
+}
+.modal-item {
+  &:hover {
+    color: var(--sky-blue);
+    border-bottom: 1px solid var(--sky-blue);
+    box-shadow: 1px 0px 8px #69adff;
+    padding: 0.35rem;
+  }
+}
+.more-btn {
+  border: none;
+  background: transparent;
+}
+.support-btn {
+  border: none;
+  background: var(--sky-blue);
+  color: var(--white);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.875rem;
+  &:hover {
+    background: #569aed;
+  }
+}
+.admin-heading {
+  color: var(--blue-text);
+}
+.time-duration {
+  select {
+    padding: 0.25rem;
+    border: none;
+    color: white;
+    background: #69adff96;
+    border-radius: 0.2rem;
+    &:focus {
+      outline: #569aed;
+    }
+  }
+}
+/* cards */
+.call-det-icons {
+  > img {
+    width: 15%;
+  }
+}
+.call-detail-card {
+  border-radius: 0.25rem;
+  min-height: 80.5px;
+}
+.call-count,
+.call-det-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  text-shadow: 1px -1px 2px #000000c4;
+}
+.call-det-text {
+  font-size: 1.25rem;
+}
+/* agent card */
+.agents-det-card {
+  min-width: 32%;
+  border-radius: 0.3rem;
+}
+.agents-details-container > .row {
+  min-height: 100%;
+}
+.total-calls {
+  > select {
+    word-wrap: normal;
+    padding: 0.25rem;
+    border: none;
+    color: white;
+    background: #69adff96;
+    border-radius: 0.2rem;
+    font-size: 0.875rem;
+    &:focus {
+      outline: #569aed;
+    }
+  }
+}
+.chart-wrapper {
+  > canvas {
+    display: block;
+    height: 200px !important;
+    width: 400px !important;
+  }
+}
+/* timer */
+#countdown {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  > svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+  }
+}
+
+#countdown-number {
+  color: #3480db;
+  display: inline-block;
+  line-height: 40px;
+}
+
+svg circle {
+  stroke-dasharray: 8px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  stroke: #3480db;
+  fill: none;
+  animation: countdown linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+/* utility classes */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px #69adff9c;
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+}
+.pointer {
+  cursor: pointer;
+}
+.green-bg {
+  background-image: linear-gradient(100deg in oklch, #2dc5d3 0%, #9ee9ed 100%);
+}
+.lilac-bg {
+  background-image: linear-gradient(
+    100deg in oklch,
+    #c5b0eebd 0%,
+    #e0d2fd 100%
+  );
+}
+.pink-bg {
+  background-image: linear-gradient(
+    100deg in oklch,
+    #f599c085 0%,
+    #fdbbd7 100%
+  );
+}
+.blue-bg {
+  background-image: linear-gradient(
+    100deg in oklch,
+    #7fb3f2a1 0%,
+    #bad7fa 100%
+  );
+}
