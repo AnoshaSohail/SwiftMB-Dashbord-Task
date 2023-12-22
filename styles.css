@@ -38,7 +38,7 @@ body {
   &:hover {
     color: var(--sky-blue);
     border-bottom: 1px solid var(--sky-blue);
-    box-shadow: 1px 0px 8px #69adff;
+    /* box-shadow: 1px 0px 8px #69adff; */
     padding: 0.35rem;
   }
 }
